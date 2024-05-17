@@ -1,0 +1,94 @@
+.MuiTabs-indicator.css-1aquho2-MuiTabs-indicator {
+    background-color: var(--clr-200);
+}
+
+.MuiButtonBase-root.MuiTab-textColorPrimary, .MuiButtonBase-root.MuiTab-textColorPrimary.Mui-selected {
+    font-size: 1.1rem;
+    color: var(--clr-300);
+    text-transform: capitalize;
+}
+
+.signform_wrapper {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.form-wrapper {
+    width: min(90%, 500px);
+    height: min-content;
+    margin-block: 5em;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 5px 24px;
+}
+
+.login-wrapper {
+    padding: 3.5em 2em;
+}
+
+.login-wrapper .field {
+    margin-bottom: 2em;
+    display: grid;
+    gap: 0.5em;
+}
+
+.login-wrapper input {
+    padding: 0.8em 1em;
+    border: 1px solid var(--clr-500);
+}
+
+.login-wrapper .icon {
+    font-size: 1rem;
+    color: var(--clr-500);
+    cursor: pointer;
+    transition: color 0.18s;
+}
+
+.login-wrapper .icon:hover {
+    color: var(--clr-300);
+}
+
+.field-error {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-error {
+    color: var(--clr-200);
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.field .password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.field .password input {
+    flex: 1;
+}
+
+.submit-btn {
+    width: 100%;
+    padding-block: 0.8em;
+    margin-top: 1em;
+    color: var(--clr-100);
+    font-size: 1rem;
+    background-color: var(--clr-200);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 600px ) {
+    .login-wrapper {
+        padding: 3em;
+    }
+}
+
+

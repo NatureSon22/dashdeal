@@ -1,0 +1,238 @@
+.header-nav {
+    background-color: var(--clr-200);
+    padding: 1.3em 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav__button {
+    color: var(--clr-200)
+}
+
+.header-nav__button-burger {
+    padding: 0.5em 1em;
+    background-color: var(--clr-100);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.header-nav__side {
+    width: min(70%, 300px);
+    height: 100%;
+    background-color: var(--clr-100);
+    position: fixed;
+    right: 0;
+    z-index: 5;
+}
+
+.clr-backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: hsla(0, 0%, 21%, 0.7);
+    z-index: 3;
+}
+
+.header-nav__side {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.header-nav__side-exit {
+    width: fit-content;
+    margin-left: auto;
+    padding: 0.4em 0.9em;
+    background-color: var(--clr-100);
+    border: 1px solid var(--clr-500);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header-nav__button {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.header-nav__button .link {
+    color: var(--clr-100);
+    width: min-content;
+    display: none;
+    position: relative;
+}
+
+.header-nav__button .link::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: var(--clr-100);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.18s;
+}
+
+.header-nav__button .link:hover::after {
+    width: 100%;
+}
+
+.header-nav__button .sell-link {
+    padding: 0.7em 2em;
+    color: var(--clr-200);
+    background-color: var(--clr-100);
+    font-weight: 600;
+    border-radius: 5px;
+    display: none;
+    position: relative;
+}
+
+.header-nav__side-buttons {
+    display: grid;
+    gap: 2.5em;
+}
+
+.header-nav__side-buttons .link {
+    width: min-content;
+    position: relative;
+}
+
+.header-nav__side-buttons .link::after {
+    content: '';
+    width: 0;
+    height: 7px;
+    background-color: var(--clr-200);
+    position: absolute;
+    left: 0;
+    bottom: -0.6em;
+    transition: width 0.18s;
+}
+
+.cart {
+    color: var(--clr-100);
+    font-size: 2rem;
+    position: relative
+}
+
+.cart-count {
+    width: 25px;
+    height: 25px;
+    background-color: var(--clr-200);
+    color: var(--clr-100);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 2px solid var(--clr-100);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: -7px;
+    bottom: 0;
+}
+
+.header-nav__side-buttons .link:hover::after {
+    width: 100%;
+}
+
+.user-icon {
+    font-size: 2rem;
+    color: var(--clr-100);
+    position: relative;
+}
+
+.header-input {
+    width: min(90%, 45em);
+    display: flex;
+}
+
+.header-input input {
+    width: 100%;
+    padding: 0.7em 1.5em;
+    background-color: var(--clr-200);
+    border: 1px solid var(--clr-100);
+    color: var(--clr-100);
+}
+
+.header-input input:active, .header-input input:focus {
+    outline: none;
+}
+
+.header-input input::placeholder {
+    color: var(--clr-100-reduce);
+}
+
+.header-input button {
+    padding: 0.5em 1.3em;
+    color: var(--clr-100);
+    background-color: var(--clr-200);
+    border: 1px solid var(--clr-100);
+    cursor: pointer;
+}
+
+.header-nav__logo {
+    cursor: pointer;
+}
+
+.floating-nav {
+    width: 15em;
+    position: absolute;
+    background-color: var(--clr-100);
+    color: var(--clr-300);
+    font-size: 1rem;
+    padding: 1.5em;
+    right: 0;
+    top: 3.5em;
+    display: none;
+    z-index: 3;
+    border: 1px solid var(--clr-500);
+}
+
+.user-icon:hover .floating-nav {
+    display: block;  
+}
+
+.floating-nav p {
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.floating-nav div {
+    font-size: 0.85rem;
+    margin-top: 1em;
+    display: grid;
+    gap: 0.5em;
+}
+
+.floating-nav div a:hover {
+    color: var(--clr-200);
+}
+
+.log-out {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid var(--clr-500);
+}
+
+
+@media (min-width: 700px) {
+    .header-nav {
+        padding-right: 3em;
+    }
+}
+
+@media (min-width: 900px) {
+    .header-nav {
+        padding-inline: 3em 4em;
+    }
+
+    .header-nav__button-burger {
+        display: none;
+    }
+
+    .header-nav__button .sell-link, .header-nav__button .link {
+        display: block;
+    }
+}

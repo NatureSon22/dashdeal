@@ -1,0 +1,78 @@
+.dashboard-wrapper {
+    min-height: 60vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-container {
+    width: min(90%, 1300px);
+    margin-block: 3em 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.dashboard-welcome {
+    display: flex;
+    gap: 1.7em;
+    align-items: center;
+}
+
+.dashboard-welcome .icon {
+    font-size: 3.2rem;
+    color: var(--clr-200);
+}
+
+.dashboard-welcome .username {
+    font-weight: bold;
+}
+
+.dashboard-tabs .tab {
+    padding: 1em 2em;
+    color: var(--clr-300);
+    background-color: var(--clr-100);
+    font-weight: 600;
+    border: 1px solid var(--clr-600);
+    cursor: pointer;
+}
+
+.dashboard-tabs .selected {
+    color: var(--clr-100);
+    background-color: var(--clr-200);
+    border: 1px solid var(--clr-200);
+}
+
+.dashboardtab-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.tabcontent-container {
+    display: flex; 
+    align-items: start;
+    flex: 1;
+}
+
+.dashboardmain-container {
+    padding-block: 1em;
+    color: var(--clr-300);
+    font-size: 0.9rem;
+}
+
+.dashboardmain-container p:nth-child(1) {
+    margin-bottom: 1.5em;
+}
+
+@media (min-width: 800px) {
+    .dashboardtab-container {
+        flex-direction: row;
+        gap: 5em;
+    }
+
+    .dashboard-tabs {
+        min-width: 15em;
+    }
+
+}

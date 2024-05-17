@@ -1,0 +1,89 @@
+.footer-wrapper {
+    width: min(90%, 1700px);
+    margin-top: 1em;
+    padding: 3em 2em;
+    font-size: 0.8rem;
+    color: var(--clr-500);
+    border-top: 1px solid var(--clr-600);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5em;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    margin-top: auto;
+}
+
+.footer-wrapper__company {
+    max-width: 20em;
+}
+
+.footer-wrapper__company .company {
+    margin-top: 2em;
+    color: var(--clr-300);
+}
+
+.footer-link p {
+    color: var(--clr-300);
+    margin-bottom: 1.5em;
+    font-size: 0.9rem;
+}
+
+.footer-link ul {
+    display: grid;
+    gap: 0.7em;
+}
+
+.footer-link .browse {
+    color: var(--clr-200);
+    font-weight: 700;
+}
+
+.footer-link ul li {
+    cursor: pointer;
+    transition: color 0.18s;
+}
+
+.footer-link ul li:hover {
+    cursor: pointer;
+    color: var(--clr-300);
+}
+
+.link-wrapper {
+    width: min(90%, 800px);
+    display: flex;
+    flex-direction: column;
+    justify-content: spa;
+    gap: 3em;
+}
+
+.footer-about ul {
+    font-size: 0.9rem;
+    color: var(--clr-300);
+    display: grid;
+    gap: 0.7em;
+}
+
+.footer-about li {
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .link-wrapper {
+        flex-direction: row;
+    }
+
+    .link-wrapper > * {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1000px) {
+    .footer-wrapper {
+        flex-direction: row;
+        align-items: start;
+        text-align: left;
+        font-size: 0.85rem;
+    }
+}

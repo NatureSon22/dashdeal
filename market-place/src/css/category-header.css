@@ -1,0 +1,23 @@
+.category-header {
+    padding-inline: 6em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.category-label {
+    width: 290px;
+    font-family: "Poppins", sans-serif !important;
+    padding: 0.4em 1em;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary {
+    border: none;
+}
+
+li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root {
+    font-family: "Poppins", sans-serif !important;
+    padding: 0.5em 2em;
+}
+
+.label img {
+    margin-right: 1em;
+}

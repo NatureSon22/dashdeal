@@ -1,0 +1,68 @@
+.shoplist-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.shoplist-container {
+    width: min(90%, 1705px);
+    padding-block: 2em;
+    display: flex;
+    gap: 3em;
+}
+
+.categories-container {
+    height: min-content;
+    min-width: 18em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.categories-container .filter {
+    margin-bottom: 1em;
+    padding: 1.5em;
+    background-color: var(--clr-700);
+}
+
+.filter .label {
+    font-size: 1.2rem;
+    color: var(--clr-200);
+    margin-bottom: 0.8em;
+}
+
+.filter ul {
+    margin-left: 1em;
+    display: grid;
+    gap: 0.5em;
+}
+
+.filter li {
+    color: var(--clr-500);
+    cursor: pointer;
+    transition: color 0.18s;
+}
+
+.filter li:hover {
+    color: var(--clr-300);
+}
+
+.itemlist-wrapper {
+    flex: 1;
+}
+
+
+.itemlist-container {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5em 2em;
+}
+
+.loader {
+    color: var(--clr-300);
+    margin-inline: auto;
+}
+
+.infinite-scroll-component p {
+    grid-column: 1 / 5;
+}
